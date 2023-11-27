@@ -7,3 +7,11 @@ CREATE TABLE `transactions` (
   `price` int NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+CREATE TABLE `dentist_list` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `dentist_name` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `address` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `contact_num` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
