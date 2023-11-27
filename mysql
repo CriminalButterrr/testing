@@ -1,0 +1,9 @@
+CREATE TABLE `transactions` (
+  `id` int(100) NOT NULL AUTO_INCREMENT,
+  `client_name` varchar(25) COLLATE utf8_unicode_ci NOT NULL,
+  `transaction_date` datetime NOT NULL DEFAULT current_timestamp(),
+  `modified` datetime NOT NULL DEFAULT current_timestamp(),
+  `case_nature` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `price` int NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
